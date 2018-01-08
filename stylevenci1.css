@@ -1,0 +1,153 @@
+﻿body {
+     background-color:white;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    font:0.8em Arial,Helvetica,sans-serif;
+          
+            
+}
+#header{background-image:url("")}
+        #container{width:auto;}
+        #header{font-size:2.2em;text-align:center;padding:5px;}
+        #nav,#aside{width:110px;float:left;padding:5px;}
+        #aside{color:#000;float:right}
+        #content{ margin:0 210px;padding:20px;}
+        h2{margin:0 0 1em;}
+        #footer{margin-left:3px;margin-bottom:3px;margin-right:3px;margin-top:110px;clear:both;padding-bottom:3px;color:#000000;}
+        h1{text-shadow:dodgerblue 0.7mm 0.7mm 1px;font-size:25pt;text-align:center;color:blue;font-size:xx-large;}
+h2{font-size:50px;
+   text-align:center;
+   font-weight:bold,initial;
+   font-family:Arial;
+   text-shadow:#464cce 0.9mm 0.9mm 7px;
+   font-style:oblique;
+   text-transform:capitalize;
+   color:blue;
+
+}
+p{font-size:23px;font-family:'Times New Roman';text-wrap:normal;text-align:justify;text-indent:20mm;color:black;text-shadow:50px 12px 12px black}
+h3{font-size:50px;
+   text-align:center;
+   font-family:Arial;
+   font-weight:bold;
+   text-shadow:blue 0.9mm 0.9mm 7px;
+   text-transform:capitalize;
+   color:dodgerblue;
+   -webkit-column-span: all; /* Chrome, Safari, Opera */
+    column-span: all;
+}
+h1, h2 {
+    font-weight:normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+hr{
+    color:#39e418;
+    background-color:cornflowerblue;
+    height:3px;
+    border-width:0;
+}
+
+.newspaper {
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+    
+    }
+a:link{text-decoration:none; color:white}
+a:visited{text-decoration:dotted;color:white}
+a:active{text-decoration:solid;color:white}
+a:focus{text-decoration:none;color:blue}
+a:hover{text-decoration:none;color:white}
+
+ul li{position:relative;}
+li ul{
+    position:absolute;
+    left:180px;
+    top:0;
+    display:none;
+}
+ul li a{
+    display:block;
+    text-decoration:none;
+    color:blue;
+    background:;
+    padding:7px;
+    border:none;
+    border-bottom:0;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+    width:150px;
+    border-bottom:none;
+}
+li:hover ul{display:block;}
+a{
+    text-size-adjust:100%
+}
+div.hide {
+    display: inline;
+    height: 0px;
+    left: -1000px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: -1000px;
+    visibility: hidden;
+    width: 0px;
+}
+a.button3 {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: .7em 5em;
+  outline: none;
+  border-width: 9px 0;
+  border-style: solid none;
+  border-color: blue dodgerblue white;
+  border-radius: 9px;
+  background: linear-gradient(blue, dodgerblue) dodgerblue;
+  transition: 0.2s;
+} 
+a.button3:hover { background: linear-gradient(blue, white) #f5ae00; }
+a.button3:active { background: linear-gradient(white, dodgerblue) #f59500; }
+
+a.button10 {
+  position: relative;
+  z-index: 1;
+  color: black;
+  font-size: 135%;
+  font-weight: 700;
+  text-decoration: none;
+  padding: .25em .5em;
+}
+a.button10:after {
+  content: "Buy now";  /* здесь 7 букв */
+  position: absolute;
+  z-index: -1;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  /* где 7*(1em*90/135), где 7 - это 7 букв (Buy now), 90 - это font-size after, а 135 - это font-size родителя */
+  width: calc(100% + 7*(1em*90/135) + 2px*2*2);  
+  text-align: right;
+  color: #fff;
+  font-size: 100%;
+  padding: .30em .7em;
+  border-radius: 9px;
+  border: 1px solid dodgerblue;
+  -webkit-transform: skewX(-10deg);
+  transform: skewX(-10deg);
+  background: linear-gradient(blue, white) no-repeat 100% 0;
+  background-size: calc(7*(1em*90/135) + .7em) 100%;
+  box-shadow: inset calc(-7*(1em*90/135) - .5em) 0 blue;
+  transition: .3s;
+}
+a.button10:hover:after {
+  box-shadow: inset calc(-6*(1em*90/135) - .5em) 0 rgba(255,255,255,.2);
+}
+a.button10:active:after {
+  background-image: linear-gradient(#c61e40, #d4536d);
+}
